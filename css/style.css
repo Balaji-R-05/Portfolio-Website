@@ -1,3 +1,98 @@
-body{
-    font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+    background-color: black;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+
+}
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.navbar .logo:hover {
+    transform: scale(1.2);
+    color: #ff0000;
+}
+.navbar .nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+}
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+.navbar .nav-links a:hover {
+    transform: scale(1.2);
+    color: #ff0000;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}  
+
+/* About Section */
+.about {
+    padding: 5rem 0;
+    text-align: center;
+    font-size: 1.5rem; ;
+}
+
+
+
