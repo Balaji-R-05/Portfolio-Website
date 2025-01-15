@@ -79,13 +79,20 @@ body {
     object-fit: cover;
     z-index: -1;
 }
-.hero h1 {
+.hero-content h1,span{
     font-size: 5rem;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
-}  
+    position: relative;
+    padding: 1rem 2rem;
+    border: 2px solid transparent; /* Initial transparent border */
+    transition: all 0.4s ease-in-out; /* Smooth transition */
+}
+
+.hero-content span:hover {
+    border-color: greenyellow; /* Change border color on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add glow effect */
+    transition: all 0.4s ease-in-out;
+}
 
 /* About Section */
 .about {
@@ -96,3 +103,12 @@ body {
 
 
 
+
+
+
+
+footer {
+    padding: 30px;
+    text-align: center;
+    margin: 30px;
+}
